@@ -1,22 +1,17 @@
 // script.js
 
-const accessKey = 'YOUR_UNSPLASH_ACCESS_KEY'; // Replace with your actual Unsplash access key
-const apiUrl = `https://api.unsplash.com/photos/random?client_id=${_NiTAU5tNOXemw99EEzQ1LKTGhRnN0PMOrfsloHTlVY}`;
+const accessKey = '_NiTAU5tNOXemw99EEzQ1LKTGhRnN0PMOrfsloHTlVY'; // Replace with your actual Unsplash access key
+const apiUrl = `https://api.unsplash.com/photos/random?client_id=${accessKey}`;
 
 async function fetchImages() {
-  try {
-    const response = await fetch(apiUrl);
+  const response = await fetch(apiUrl);
+  const data = await response.json();
+  
+  const imagecontainer = document.getElementById("image-container");
 
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-
-    const data = await response.json();
-    displayImages(data);
-  } catch (error) {
-    console.error('Fetch error:', error);
-  }
 }
+
+
 
 function displayImages(images) {
   const imageContainer = document.getElementById('image-container');

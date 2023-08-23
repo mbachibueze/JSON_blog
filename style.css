@@ -42,7 +42,7 @@
   transition: all 0.5s;
 }
 .fa-magnifying-glass:hover{
-  background-color: rgb(5, 169, 5);
+  background-color: #05a905;
 }
 i{
   cursor: pointer;
@@ -109,9 +109,10 @@ h3{
 h5{
   font-weight: 500;
   padding-bottom: 3px;
+  font-size: 12px;
 }
 h6{
-  font-weight: 200px;
+  font-weight: 400;
 }
 p{
   padding: 10px 0;
@@ -126,10 +127,10 @@ p{
 
 
 /* blog */
-.blog-container h3{
+.blog-container> h3{
   text-decoration: underline;
-  padding-bottom: 10px;
 }
+
 .blog{
   width: 80%;
   margin: auto;
@@ -139,6 +140,7 @@ p{
 }
 
 .editor{
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -165,4 +167,41 @@ p{
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+.trending p, .fa-angle-right{
+  font-size: small;
+  padding-top: 20px;
+  color:  #05a905;
+}
+.trending h3{
+  text-decoration: underline;
+}
+
+
+.trends-box{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.trends{
+  display: flex;
+}
+.trends h1{
+  padding: 0 10px;
+  font-weight: 500;
+  color: #dedcdc;
+  font-size: 35px;
+}
+.trends h4{
+  font-weight: 500;
+}
+
+#image-container{
+  box-shadow: 0 0 5px 0 black;
+  padding: 100px;
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 10px;
 }
