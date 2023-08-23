@@ -1,7 +1,7 @@
 // script.js
 
 const accessKey = 'YOUR_UNSPLASH_ACCESS_KEY'; // Replace with your actual Unsplash access key
-const apiUrl = `https://api.unsplash.com/photos/random?client_id=${accessKey}`;
+const apiUrl = `https://api.unsplash.com/photos/random?client_id=${_NiTAU5tNOXemw99EEzQ1LKTGhRnN0PMOrfsloHTlVY}`;
 
 async function fetchImages() {
   try {
