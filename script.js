@@ -1,31 +1,17 @@
-// script.js
+function fetchData(){
+  fetch("https://jsonplaceholder.typicode.com/users")
+    .then(response => response.json())
+    .then(data => {
+      const output = document.getElementById("image-container");
+      data.forEach(post => {
+        const postElement = document.createElement('div');
+        postElement.innerHTML = `<h3>${post.title}</h3><p>${post.body}</p>`
 
-const accessKey = '_NiTAU5tNOXemw99EEzQ1LKTGhRnN0PMOrfsloHTlVY'; // Replace with your actual Unsplash access key
-const apiUrl = `https://api.unsplash.com/photos/random?client_id=${accessKey}`;
-
-async function fetchImages() {
-  const response = await fetch(apiUrl);
-  const data = await response.json();
-  
-  const imagecontainer = document.getElementById("image-container");
-
+        output.appendChild(postElement);
+      })
+    })
+    
+    .catch(error => {console.error('Error:', error)})
 }
 
-
-
-function displayImages(images) {
-  const imageContainer = document.getElementById('image-container');
-
-  // Clear previous content if any
-  imageContainer.innerHTML = '';
-
-  // Display fetched images
-  images.forEach(image => {
-    const imageElement = document.createElement('img');
-    imageElement.src = image.urls.regular;
-    imageElement.alt = image.alt_description;
-    imageContainer.appendChild(imageElement);
-  });
-}
-
-fetchImages();
+fetchData()

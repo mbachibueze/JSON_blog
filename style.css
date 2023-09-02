@@ -102,6 +102,8 @@ h4, p, span{
 p{
   font-size: 14px;
   color: #808080;
+  padding: 0 0 10px;
+  line-height: 25px;
 }
 h3{
   font-weight: 400;
@@ -114,8 +116,8 @@ h5{
 h6{
   font-weight: 400;
 }
-p{
-  padding: 10px 0;
+h1,h2,h3,h4,h5{
+  padding-bottom: 10px;
 }
 .date, .fa-star{
   font-size: 11px;
@@ -163,6 +165,7 @@ p{
   width: 100%;
 }
 
+
 .editor2{
   display: flex;
   flex-direction: column;
@@ -198,10 +201,76 @@ p{
   font-weight: 500;
 }
 
+
+
+.pb{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  gap: 30px;
+}
+
+.p-box, .b-box{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.politics-container h3{
+  padding-bottom: 50px;
+  text-decoration: underline;
+}
+.business-container h3{
+  padding-bottom: 50px;
+  text-decoration: underline;
+}
+
+
+.politics, .business{
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 30px;
+}
+
+.p-img1{
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQulWXSp-Yc_ml2eFKMsSSI2IYd-oc2cdWo-Smw4xa8HRCJblbi");
+}
+.p-img2{
+  background: url(https://image.shutterstock.com/image-photo/background-elephant-260nw-133689230.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.p-img3{
+  background: url(https://t3.gstatic.com/images?q=tbn:ANd9GcRsfIdiuXwb3haYNAc0XSResNnC5ir2qxqbAG50uXxJwMIqfhR0);
+}
+
+
+.recent-post{
+  display: grid; 
+  grid-template-columns: 5fr, 2fr;
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+
+
+
+
 #image-container{
   box-shadow: 0 0 5px 0 black;
-  padding: 100px;
+  padding: 10px;
   width: 80%;
   margin: 50px auto;
   border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+#image-container div{
+  box-shadow: 0 0 5px 0 black;
+  border-radius: 10px;
+  padding: 10px;
 }
