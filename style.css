@@ -246,17 +246,6 @@ h1,h2,h3,h4,h5{
   padding-bottom: 50px;
   text-decoration: underline;
 }
-.business-container h3{
-  padding-bottom: 50px;
-  text-decoration: underline;
-}
-
-
-.politics, .business{
-  display: grid;
-  grid-template-columns: 2fr 4fr;
-  gap: 30px;
-}
 
 .p-img1{
   background: url(https://img.freepik.com/free-photo/side-view-man-with-virtual-reality-headset_23-2148850996.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
@@ -273,6 +262,35 @@ h1,h2,h3,h4,h5{
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.business-container h3{
+  padding-bottom: 50px;
+  text-decoration: underline;
+}
+
+.bc-img1{
+  background: url(https://img.freepik.com/free-photo/front-view-man-looking-away_23-2148291498.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bc-img2{
+  background: url(https://img.freepik.com/free-photo/people-office-during-work-day_23-2150690126.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bc-img3{
+  background: url(https://img.freepik.com/free-photo/industrial-designer-working-3d-model_23-2149370139.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.politics, .business{
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 30px;
+}
+
 
 
 .recent-post{
