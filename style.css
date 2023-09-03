@@ -80,9 +80,16 @@ i{
   width: 80%;
   margin: 90px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2,1fr);
   background-color: #e9e9e9;
 }
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  .hero-container{
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .write-up{
   font-size: 15px;
@@ -124,7 +131,14 @@ h1,h2,h3,h4,h5{
   color: #808080;
 }
 .article-img{
-  background-image: url(./images/pix1.jpg);
+  background-image: url(https://img.freepik.com/free-photo/serious-young-colleagues-sitting-office-coworking_171337-17681.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.article-img2{
+  background-image: url(https://img.freepik.com/free-photo/peaceful-businessman-vr-headset-enjoying-virtual-video_74855-2082.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -155,12 +169,22 @@ h1,h2,h3,h4,h5{
 .news-read{
   padding: 5px;
 }
-.news-img{
-  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRA2Nhv47FfRDAVhVK8Swh_JQLNHsAPlxe7WOg4eNDUlEDGG1w");
+.news-img1{
+  background-image: url(https://img.freepik.com/premium-photo/one-manager-works-laptop-night-office-male-worker-dark-business-center-interior-modern-workplace_266732-21358.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
+.news-img2{
+  background-image: url(https://img.freepik.com/free-photo/medium-shot-bored-people-working_23-2150697560.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-position: center;
+  background-size: cover;
+}
+.news-img3{
+  background-image: url(https://img.freepik.com/premium-photo/tablet-research-night-planning-businessman-working-email-internet-while-dark-office-work-corporate-african-employee-reading-communication-online-tech-while-doing-overtime_590464-87130.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-position: center;
+  background-size: cover;
+}
+
 .blog img{
   width: 100%;
 }
@@ -197,6 +221,7 @@ h1,h2,h3,h4,h5{
   color: #dedcdc;
   font-size: 35px;
 }
+
 .trends h4{
   font-weight: 500;
 }
@@ -208,6 +233,7 @@ h1,h2,h3,h4,h5{
   grid-template-columns: 1fr 1fr;
   width: 80%;
   margin: auto;
+  margin-top: 100px;
   gap: 30px;
 }
 
@@ -233,26 +259,158 @@ h1,h2,h3,h4,h5{
 }
 
 .p-img1{
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQulWXSp-Yc_ml2eFKMsSSI2IYd-oc2cdWo-Smw4xa8HRCJblbi");
+  background: url(https://img.freepik.com/free-photo/side-view-man-with-virtual-reality-headset_23-2148850996.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .p-img2{
-  background: url(https://image.shutterstock.com/image-photo/background-elephant-260nw-133689230.jpg);
-  background-position: center;
+  background: url(https://img.freepik.com/free-photo/focused-woman-testing-vr-headset_74855-4231.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 .p-img3{
-  background: url(https://t3.gstatic.com/images?q=tbn:ANd9GcRsfIdiuXwb3haYNAc0XSResNnC5ir2qxqbAG50uXxJwMIqfhR0);
+  background: url(https://img.freepik.com/premium-photo/skilled-technician-server-hub-providing-dedicated-vpn-servers-able-deliver-enhanced-security-encrypted-sensitive-data-online-anonymity-fast-speed-bandwidth-users_482257-68004.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
 .recent-post{
   display: grid; 
-  grid-template-columns: 5fr, 2fr;
+  grid-template-columns: 3fr 1fr;
   gap: 30px;
   width: 80%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
 }
+
+
+.recent h3{
+  text-decoration: underline;
+}
+.r-box{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-size: small;
+}
+.r-read{
+  padding: 20px 30px 20px 0;
+}
+.r-read h3{
+  text-decoration: none;
+  color: #666666;
+}
+.r-box h4{
+  font-weight: 400;
+}
+.r-box p{
+  font-size: 1em;
+}
+
+.r-box-p{
+  margin-top: 30px;
+  letter-spacing: 10px;
+}
+.r-box-p span{
+  font-weight: 600;
+  color: black;
+}
+.r-img1{
+  background-image: url(https://t4.ftcdn.net/jpg/05/50/05/05/240_F_550050513_LR2CHpHOmvZnIOqKBd1Rd81izLXovFNh.jpg);
+  background-size: cover;
+}
+.r-img2{
+  background-image: url(https://img.freepik.com/free-photo/woman-having-fun-with-vr-headset_53876-70976.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-size: cover;
+}
+.r-img3{
+  background: url(https://img.freepik.com/free-photo/medium-shot-couple-with-laptop_23-2149145054.jpg?size=626&ext=jpg&ga=GA1.2.746289648.1661586601&semt=ais);
+  background-size: cover;
+}
+
+
+.np-container{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.new-post h4{
+  font-weight: 500;
+}
+.new-post h3{
+  text-decoration: underline;
+}
+.np-box{
+  display: flex;
+}
+.np-box h1{
+  padding: 0 10px;
+  font-weight: 500;
+  color: #dedcdc;
+  font-size: 35px;
+}
+
+.cta{
+  background-color: #e8edea;
+  margin-top: 150px;
+}
+.cta-container{
+  width: 80%;
+  margin: auto;
+  padding: 100px 0 100px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+  align-items: center;
+}
+.cta-news{
+  font-size: 0.6rem;
+}
+.cta-news p{
+  font-size: small;
+}
+
+.cta-input{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cta input{
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 20px;
+  border: none;
+}
+
+.fa-paper-plane{
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+.fa-paper-plane:hover{
+  background-color: #05a905;
+}
+
+
+footer{
+  padding: 20px;
+  text-align: center;
+}
+
+.fa-heart{
+  color: red;
+}
+
+
+
+
+
+
 
 
 
