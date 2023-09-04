@@ -450,3 +450,6 @@ footer{
   border-radius: 10px;
   padding: 10px;
 }
+#image-container img{
+  width: 100%;
+}
